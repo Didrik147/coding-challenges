@@ -53,6 +53,8 @@ main p {
 
 .left{
     background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .middle {
@@ -61,14 +63,18 @@ main p {
 
 .right {
     background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 button {
-    border: none;
-    border-radius: 20px;
-    padding: 12px min(32px, 4vw);
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 12px min(32px, 3vw);
     margin-top: 80px;
     margin-bottom: 10px;
+    /* line-height: 25px; */
+    cursor: pointer;
 }
 
 .left button{
@@ -82,11 +88,17 @@ button {
     color: var(--very-dark-cyan);
 }
 
+button:active {
+    background-color: initial;
+    color: #fff;
+}
+
 
 /* Attribution */
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .attribution a {
@@ -111,8 +123,19 @@ button {
     }
 
     button {
-        padding: 12px 32px;
+        padding: 12px min(32px, 10vw);
         margin-top: 50px;
         margin-bottom: 0;
+    }
+
+    .left{
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .right {
+        background-color: var(--very-dark-cyan);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
     }
 }
