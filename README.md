@@ -1,1 +1,3 @@
-Repository for solution to various coding challenges. 
+# Coding challenges
+
+Repository for solutions to various coding challenges. 
