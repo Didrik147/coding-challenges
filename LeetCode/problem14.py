@@ -7,24 +7,19 @@ Write a function to find the longest common prefix string amongst an array of st
 If there is no common prefix, return an empty string "".
 
 """
-def longestCommonPrefix(strs):
-    # w is window length
-    for w in range(1, 300):
-        prefixes = []
-        for s in strs:
-            prefix = s[0:w]
-            prefixes.append(prefix)
-        
-            #print(prefix)
-        
-        if len(set(prefixes)) != 1:
-            prefix = prefixes[0][0:w-1]
-            return prefix
-        
-    return prefix
+
+strs = ["flower","flow","flight"]
+#strs = ["dog","racecar","car"]
+
+list2D = []
+
+for s in strs:
+    row = []
+    for letter in strs:
+        row.append(d)
+    
+    list2D.append(row)
 
 
-print(longestCommonPrefix(["flower","flow","flight"])) 
-#print(longestCommonPrefix(["dog","racecar","car"]))    
-#print(longestCommonPrefix([""]))    
-#print(longestCommonPrefix(["a"]))    
+output = ""
+
