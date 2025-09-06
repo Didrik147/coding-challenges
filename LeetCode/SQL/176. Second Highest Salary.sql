@@ -1,4 +1,4 @@
--- Fredrik Müller
+-- Frederik Müller
 
 -- Using MAX
 SELECT MAX(salary) AS SecondHighestSalary
